@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", serif;
+    background-color: #EEEEF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 200%;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 684px;
+    padding: 30px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* Header */
+h1{
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+
+/* Form */
+form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button{
+    background-color: #5016FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #7E53FF;
+}
+
+/* Task List */
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    min-height: 400px;
+    background-color: #EEEEF0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 28.1px 0px #E8E8E8;
+    border-radius: 4px;
+}
+
+.task label{
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+}
+
+.task input[type="checkbox"]{
+    accent-color: #5016FF;
+    border: 1px solid #DEDEDE;
+    width: 26px;
+    height: 27px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.task.completed label{
+    text-decoration: line-through; 
+    color: #7B7B7B;
+}
+
+.task button{
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+}
